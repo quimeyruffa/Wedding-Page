@@ -16,7 +16,7 @@ function Presentation({ handleSVGLoad, setShow }) {
         >
           <motion.div
             style={{ width: "100%" }}
-            transition={{ ease: "easeOut", duration: 5 }}
+            transition={{ ease: "easeOut", duration:4 }}
             initial={{ y: -150, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >

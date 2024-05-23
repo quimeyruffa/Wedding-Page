@@ -29,9 +29,8 @@ function App() {
       <div style={{ display: loading || show ? "none" : "" }}>
         <Presentation handleSVGLoad={handleSVGLoad} setShow={setShow}/>
       </div>
-      <div style={{ display: show ? "" : "none" }} >
-        <Home />
-      </div>
+      
+        {show && <Home handleSVGLoad={handleSVGLoad}/>}
     </>
   );
 }

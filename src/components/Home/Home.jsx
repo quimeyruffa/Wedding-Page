@@ -5,8 +5,9 @@ import Lottie from "lottie-react";
 import adorno from "../../WeddingAssets/adorno_frase_portada.json";
 import { Counter } from "./Counter";
 import { Info } from "./Info";
+import { motion } from "framer-motion";
 
-function Home() {
+function Home({ handleSVGLoad }) {
   const options = {
     loop: true,
     autoplay: true,
@@ -18,13 +19,20 @@ function Home() {
 
   return (
     <>
-      <div className="inv-container container">
+      <motion.div
+        transition={{ ease: "easeOut", duration: 2 }}
+        className="inv-container container"
+        initial={{ opacity: 0 }}
+        animate={{  opacity: 1 }}
+      >
         <section className="portada">
           <div
             className="d-md-flex"
             style={{ position: "relative", overflow: "hidden" }}
           >
-            <div className="portada-picture"> </div>
+            <div className="portada-picture" onLoad={handleSVGLoad}>
+              {" "}
+            </div>
             <div className="sombra-horizontal sombra-bottom"></div>
 
             <div className="portada-container d-flex justify-content-center align-items-center">
@@ -97,7 +105,7 @@ function Home() {
         </section>
         <Counter />
         <Info />
-      </div>
+      </motion.div>
     </>
   );
 }

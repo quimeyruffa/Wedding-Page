@@ -762,7 +762,7 @@ section.portada {
 /* Portada imagen */
 section.portada .portada-picture {
   width: 50%;
-  background-image: url(https://fixdate.io/recursos-variantes-modelos/125/3/portadas/portada.webp);
+  background-image: url('./portada.png');
   background-size: cover; /* Ajusta la imagen para cubrir todo el div */
   background-position: center;
 
@@ -781,7 +781,7 @@ section.portada .portada-picture::before {
 
   background-size: cover; /* Ajusta la imagen para cubrir todo el div */
   background-position: center;
-  background-image: url(https://fixdate.io/recursos-variantes-modelos/125/3/portadas/portada.webp);
+  background-image: url('./portada.png');
 
   /* background-color: rgba(29, 29, 27, 0.1); */
   z-index: 0;
@@ -2309,7 +2309,7 @@ footer svg.firma-footer .x-fixdate {
   section.portada .portada-picture {
     width: 100%;
     height: 460px;
-    background-image: url(https://fixdate.io/recursos-variantes-modelos/125/3/portadas/portada.webp);
+    background-image: url('./portada.png');
     background-size: cover; /* Ajusta la imagen para cubrir todo el div */
     background-position: center;
 
