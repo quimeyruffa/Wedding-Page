@@ -1,0 +1,14 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" fill="none" data-inject-url="https://fixdate.io/modelo-invitacion/125/img/esquina-box.svg" class="injectable adorno-esquina adorno-esquina-1" width="37"  height="37" >
+
+  <g fill="none">
+    <!-- Fondo esquina -->
+    <path class="fondo-adorno" d="M37 0H0V37H37V0Z" fill="#2F2F2F"></path>
+
+    <!-- Punto -->
+    <path class="punto-adorno" d="M0.75 37V33.79H3.38C20.18 33.79 33.79 20.17 33.79 3.38V0.75H36.99" stroke="#BA9972" fill="none"></path>
+    
+    <!-- Circulo -->
+    <path class="circulo-adorno" d="M5.80002 11.56C8.99223 11.56 11.58 8.97221 11.58 5.78C11.58 2.58779 8.99223 0 5.80002 0C2.60781 0 0.0200195 2.58779 0.0200195 5.78C0.0200195 8.97221 2.60781 11.56 5.80002 11.56Z" fill="#BA9972"></path>
+  </g>
+
+</svg>
