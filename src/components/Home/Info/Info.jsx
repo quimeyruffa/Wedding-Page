@@ -24,8 +24,8 @@ function Info() {
     },
   };
   const eventDetails = {
-    start: "2024-07-02 14:03:14",
-    end: "2024-07-02 14:03:14",
+    start: "2025-04-05 14:03:14",
+    end: "2025-04-05 14:03:14",
     timezone: "America/Argentina/Buenos_Aires",
     title: "Boda de Danny y Gabi (Ceremonia)",
   };
@@ -50,7 +50,7 @@ function Info() {
                 <div className="info-col">
                   <div className="info-box">
                     <h6>Día</h6>
-                    <p>Sábado 15 de Mayo - 17hs</p>
+                    <p>Sábado 4 de Abril - 17hs</p>
                     <Button
                       start={eventDetails.start}
                       end={eventDetails.end}
@@ -106,7 +106,7 @@ function Info() {
                 <div className="info-col">
                   <div className="info-box">
                     <h6>Día</h6>
-                    <p>Sábado 15 de Mayo - 17hs</p>
+                    <p>Sábado 4 de Abril - 17hs</p>
                     <Button
                       start={eventDetails.start}
                       end={eventDetails.end}

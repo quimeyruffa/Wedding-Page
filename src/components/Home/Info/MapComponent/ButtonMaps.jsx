@@ -1,6 +1,6 @@
 const ButtonMaps = () => {
-  const lat = 37.7749; // Latitud de ejemplo
-  const lng = -122.4194; // Longitud de ejemplo
+  const lat = -34.5444819; // Latitud de ejemplo
+  const lng = -58.4593651; // Longitud de ejemplo
 
   const openInGoogleMaps = () => {
     const url = `https://www.google.com/maps?q=${lat},${lng}`;
@@ -11,7 +11,7 @@ const ButtonMaps = () => {
     <div className="info-col">
       <div className="info-box">
         <h6>Dirección</h6>
-        <p>Av. Pergamino 203 - BsAs</p>
+        <p>Jano's Nuñez, Av. del Libertador 7501</p>
         <button
           className="boton modal-como-llegar"
           onClick={openInGoogleMaps}

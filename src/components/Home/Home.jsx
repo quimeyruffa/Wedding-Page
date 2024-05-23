@@ -63,7 +63,7 @@ function Home({ handleSVGLoad }) {
               />
               <div className="content-portada text-center">
                 <div className="box-nombres-fecha-portada">
-                  <span className="fecha">15.05.2021</span>
+                  <span className="fecha">04.05.2025</span>
                   <div className="iniciales">
                     <span>D</span>
                     <img
