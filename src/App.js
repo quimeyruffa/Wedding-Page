@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Loader } from "./components/Loader";
 import { Presentation } from "./components/Presentation";
 import Home from "./components/Home/Home";
-
+import portada from './portada.png'
 function App() {
   const [loading, setLoading] = useState(true);
   const [loadedCount, setLoadedCount] = useState(0);
@@ -30,7 +30,7 @@ function App() {
         <Presentation handleSVGLoad={handleSVGLoad} setShow={setShow}/>
       </div>
       
-        {show && <Home handleSVGLoad={handleSVGLoad}/>}
+        {show && <Home imageUrl={portada}/>}
     </>
   );
 }
