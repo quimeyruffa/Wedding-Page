@@ -1,3 +1,5 @@
+import { ModalComponent } from "../../../Modal";
+
 const ButtonMaps = () => {
   const lat = -34.5444819; // Latitud de ejemplo
   const lng = -58.4593651; // Longitud de ejemplo
@@ -19,6 +21,7 @@ const ButtonMaps = () => {
         >
           ¿Cómo llegar?
         </button>
+        <ModalComponent />
       </div>
     </div>
   );
