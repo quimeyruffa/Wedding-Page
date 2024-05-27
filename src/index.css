@@ -1990,7 +1990,6 @@ footer svg.firma-footer .x-fixdate {
 }
 
 .modal .modal-content-2 .img-top-modal img {
-  width: 100%;
   margin-top: 0;
 }
 
@@ -2534,6 +2533,7 @@ footer svg.firma-footer .x-fixdate {
 .modal-location .modal-dialog {
   position: absolute;
   left: 50%;
+  width: 100%;
   top: 50%;
   transform: translate(-50%, -50%) !important;
 }
