@@ -13,16 +13,7 @@ function ModalComponent() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
-
-      <Modal
-        id="modalAsistencia"
-        show={show}
-        onHide={handleClose}
-        className="modal-location "
-      >
+      {/* <div id="modalAsistencia" className="modal-location">
         <div
           className="modal-content box-bordes-adorno"
           style={{ border: "1px solid #ba9972" }}
@@ -36,7 +27,7 @@ function ModalComponent() {
                 className=" modal-icon icon-ceremonia"
               />
             </div>
-            <Modal.Header className="modal-header">
+            <div className="modal-header">
               <h5 className="modal-title">¿Asistes a la ceremonia?</h5>
               <img
                 // onLoad={handleSVGLoad}
@@ -44,9 +35,9 @@ function ModalComponent() {
                 alt="icon-adorno"
                 className=" adorno-titulo "
               />
-            </Modal.Header>
+            </div>
 
-            <Modal.Body>
+            <div className="modal-body">
               <div className="formulario-content">
                 <form action="" id="formAsistencia">
                   <div className="form-group d-flex justify-content-around custom-control custom-radio custom-control-inline">
@@ -100,13 +91,13 @@ function ModalComponent() {
                 </form>
               </div>
               <div className="msj-content d-flex flex-column justify-content-center"></div>
-            </Modal.Body>
+            </div>
 
-            <Modal.Footer className="modal-footer">
+            <div className="modal-footer">
               <button type="button" id="sendAsistencia" className="boton">
                 Enviar
               </button>
-            </Modal.Footer>
+            </div>
           </div>
 
           <img
@@ -134,7 +125,7 @@ function ModalComponent() {
             className={` adorno-esquina adorno-esquina-3`}
           />
         </div>
-      </Modal>
+      </div> */}
     </>
   );
 }
