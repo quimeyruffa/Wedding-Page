@@ -2527,9 +2527,6 @@ footer svg.firma-footer .x-fixdate {
   /* end Forms */
 }
 
-.modal-backdrop {
-  background-color: #2F2F2F;
-}
 .modal-location .modal-dialog {
   position: absolute;
   left: 50%;
@@ -2537,8 +2534,8 @@ footer svg.firma-footer .x-fixdate {
   top: 50%;
   transform: translate(-50%, -50%) !important;
 }
-
-.modal-location .modal-content{
+button.close {
+  padding: 0;
   background-color: transparent;
-  border: none ;
+  border: 0;
 }

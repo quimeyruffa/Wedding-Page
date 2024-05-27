@@ -5,8 +5,9 @@ import fiesta from "../../../WeddingAssets/img_fiesta.json";
 import adorno from "../../../WeddingAssets/adorno_card.svg";
 import Button from "../Counter/Button";
 import { ButtonMaps } from "./MapComponent";
+import ConfirmInvite from "./ConfirmInvite/ConfirmInvite";
 
-function Info() {
+function Info({ setModal }) {
   const options = {
     loop: true,
     autoplay: true,
@@ -59,9 +60,8 @@ function Info() {
                     />
                   </div>
                 </div>
-            
-                    <ButtonMaps />
-                 
+                <ConfirmInvite setModal={setModal} />
+                <ButtonMaps setModal={setModal} />
               </div>
               <img
                 // onLoad={handleSVGLoad}
@@ -115,6 +115,8 @@ function Info() {
                     />
                   </div>
                 </div>
+                <ConfirmInvite setModal={setModal} />
+                <ButtonMaps setModal={setModal} />
               </div>
               <img
                 // onLoad={handleSVGLoad}

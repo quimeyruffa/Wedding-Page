@@ -1,25 +1,45 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import esquina from "../../WeddingAssets/esquina_card.svg";
-import compromiso from "../../WeddingAssets/compromiso_corazon.svg";
 import adorno from "../../WeddingAssets/adorno_card_modal.svg";
+import compromiso from "../../WeddingAssets/compromiso_corazon.svg";
+import esquina from "../../WeddingAssets/esquina_card.svg";
+import { motion } from "framer-motion";
 
-function ModalComponent() {
+function ModalComponent({ setModal }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      {/* <div id="modalAsistencia" className="modal-location">
+    <div
+      id="modalAsistencia"
+      className="modal fade show"
+      tabindex="-1"
+      style={{ display: "block", paddingRight: 10, backgroundColor: "#2F2F2F" }}
+      aria-modal="true"
+      role="dialog"
+    >
+      <motion.div
+        transition={{ ease: "easeOut", duration: 1 }}
+        initial={{ y: -150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className="modal-dialog modal-md modal-dialog-centered"
+      >
         <div
           className="modal-content box-bordes-adorno"
-          style={{ border: "1px solid #ba9972" }}
+          style={{ border: "1px solid #ba9972", background: "rgb(47, 47, 47)" }}
         >
           <div className="modal-content-2 box-color-col">
             <div className="img-top-modal d-flex justify-content-center align-items-start">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                onClick={() => setModal(false)}
+              >
+                <span aria-hidden="true">×</span>
+              </button>
               <img
                 // onLoad={handleSVGLoad}
                 src={compromiso}
@@ -125,8 +145,8 @@ function ModalComponent() {
             className={` adorno-esquina adorno-esquina-3`}
           />
         </div>
-      </div> */}
-    </>
+      </motion.div>
+    </div>
   );
 }
 

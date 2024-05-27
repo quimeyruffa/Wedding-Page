@@ -8,7 +8,7 @@ import { Info } from "./Info";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-function Home({ imageUrl }) {
+function Home({ imageUrl, setModal }) {
   const options = {
     loop: true,
     autoplay: true,
@@ -118,7 +118,7 @@ function Home({ imageUrl }) {
             </div>
           </section>
           <Counter />
-          <Info />
+          <Info setModal={setModal}/>
         </motion.div>
       )}
     </>
